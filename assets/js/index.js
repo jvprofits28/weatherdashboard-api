@@ -75,7 +75,7 @@ function fiveDayForecast(cityName) {
         let humidity = $("<p>").text(`Humidity: ${day.main.humidity}%`);
         let wind = $("<p>").text(`Wind: ${day.wind.speed} mph`);
         content.append(date, icon, temp, humidity, wind);
-        $("#forecast").append(card.append(cardBody.append(content)));
+        $("#fiveDayForecast").append(card.append(cardBody.append(content)));
       });
     },
   });
